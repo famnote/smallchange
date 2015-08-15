@@ -2023,7 +2023,7 @@ bool LoadBlockIndex(bool fAllowNew)
         
         // Genesis block
         //const char* pszTimestamp = "todo: replace with something that ensures no premining took place";
-        const char* pszTimestamp = "ulla hello ulla hello ulla hello puts somthing timely here";
+        const char* pszTimestamp = "Japan More Unpopula Than Ever in Korea";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2035,13 +2035,15 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1439535635;
+
         block.nBits    = 0x1e0ffff0;
+
+        block.nTime    = 1439626868;
         block.nNonce   = 2085639706;
 
         if (fTestNet)
         {
-            block.nTime    = 1439535635;
+            block.nTime    = 1439626868;
             block.nNonce   = 386448728;
         }
 
