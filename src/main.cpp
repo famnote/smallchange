@@ -828,7 +828,8 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 4 * COIN;
+    //int64 nSubsidy = 4 * COIN;
+    int64 nSubsidy = 788000000 * COIN;
 
 
 /*
@@ -2038,12 +2039,12 @@ bool LoadBlockIndex(bool fAllowNew)
 
         block.nBits    = 0x1e0ffff0;
 
-        block.nTime    = 1439631189;
+        block.nTime    = 1439652328;
         block.nNonce   = 2087307903;
 
         if (fTestNet)
         {
-            block.nTime    = 1439626868;
+            block.nTime    = 1439652328;
             block.nNonce   = 387282863;
         }
 
